@@ -93,3 +93,14 @@ unsigned int convert_di(va_list args, buffer_t *output,
  *
  * Return: The number of bytes stored to the buffer.
  */
+unsigned int convert_b(va_list args, buffer_t *output,
+		unsigned char flags, int wid, int prec, unsigned char len)
+{
+	unsigned int num;
+
+	num = va_arg(args, unsigned int);
+
+	(void)len;
+
+	return (convert_ubase(output, num, "01", flags, wid, prec));
+}
