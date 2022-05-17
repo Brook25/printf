@@ -63,8 +63,8 @@ unsigned int print_string_width(buffer_t *output,
  * @output: A buffer_t struct containing a character array.
  * @printed: The current number of bytes already stored to output
  * for a given specifier.
- * @flags: Flag modifiers.
- * @wid: A width modifier.
+ * @flags: Flag modifiers
+ * @wid: A width modifier
  *
  * Return: The number of bytes stored to the buffer.
  */
